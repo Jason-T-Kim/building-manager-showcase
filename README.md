@@ -47,7 +47,7 @@ See [architecture and design choices](docs/architecture.md).
 
 ## Web demo and screenshots
 
-**[Open the interactive demo](https://jason-property-ledger-demo.workspace-299356.chatgpt.site)**
+A hosted demo link will be added when the new hosting location is ready.
 
 The [browser demo source](demo/) illustrates monthly billing, payment recording and cancellation, PDF downloads, CSV export and simulated email. It uses fictional properties and records; it has no connection to the client system. Changes stay in your browser.
 
