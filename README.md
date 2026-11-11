@@ -36,6 +36,7 @@ Python 3.9 or later; no third-party packages are required.
 ```sh
 python3 -m unittest discover -s tests -v
 python3 -m examples.demo
+node --test tests/demo-model.test.cjs
 ```
 
 The demo command runs a local command-line example against a temporary, in-memory SQLite database. It does not connect to the operational application or send email.
@@ -46,4 +47,16 @@ See [architecture and design choices](docs/architecture.md).
 
 ## Web demo and screenshots
 
-A separate web demo is planned. It will use fictional properties, tenants and payments. A public demo URL and [screenshots](screenshots/README.md) will be added after that environment is ready. The client system is not offered as a public demo.
+The [browser demo source](demo/) illustrates monthly billing, payment recording and cancellation, PDF downloads, CSV export and simulated email. It uses fictional properties and records; it has no connection to the client system. Changes stay in your browser.
+
+To run it locally:
+
+```sh
+python3 -m http.server 8765 --directory demo
+```
+
+Open `http://localhost:8765/`. Node.js is needed only for the optional model tests; the demo itself requires no build or installation.
+
+![Monthly settlement in the fictional browser demo](screenshots/monthly-settlement.png)
+
+See [both screenshots and capture notes](screenshots/README.md), including an invoice with a retained payment cancellation.

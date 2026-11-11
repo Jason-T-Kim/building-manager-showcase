@@ -1,5 +1,13 @@
-# Screenshots
+# Demo screenshots
 
-Screenshots will be captured from the separate demo environment once it is available. They will use fictional tenants, addresses and financial records.
+Captured from the browser-only demonstration with fictional records. These are not screenshots of client financial data or of the live Django deployment.
 
-Planned first image: the monthly settlement view showing invoice totals, payment status and document actions. No operational screenshot is included in this repository yet.
+## Monthly settlement
+
+![Monthly settlement with fictional tenant invoices](monthly-settlement.png)
+
+## Invoice and retained cancellation history
+
+![Sample invoice showing a canceled payment and its reason](invoice-detail.png)
+
+The screenshots were captured in Chrome at a 1440 CSS-pixel viewport. The invoice example includes a sample payment cancellation performed during testing.
